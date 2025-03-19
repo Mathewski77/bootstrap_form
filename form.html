@@ -1,11 +1,56 @@
-
-
-
 <html>
     <head>
-        <titile> Boostrap_Form</titile>
+        <title>SEATWORK</title>
+        <link href = "	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/ rel="stylesheet">
     </head>
-        <body>
-        <h1>Hello World</h1>
-        </body>
+    <body>
+        <h1> ADD STUDENT </h1>
+        
+        <form action = "action_page.php" method="POST">
+            <table border="1" cellspacing="5" width="25%">
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <td>Firstname</td>
+                    <td> <input type = "text" name = "Firstname" placeholder="Enter the Firstname"></td>
+                </tr>
+                <tr>
+                    <td>Lastname</td>
+                    <td> <input type = "text" name = "Lastname" placeholder="Enter the Lastname"></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td> <input type = "text" name = "City" placeholder="Enter the City"></td>
+                </tr> 
+                <tr>
+                    <td>Provinces</td>
+                    <td>
+                        <select name="Country">
+                            <option value="PH">-SELECT YOUR PROVINCES-</option>
+                            <option value="ML">Manila</option>
+                            <option value="BC">Bulacan</option>
+                            <option value="PG">Pampanga</option>
+                        <select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip</td>
+                    <td> <input type = "text" name = "Zip" placeholder="Enter the Zip"></td>
+                </tr> 
+                <tr>
+                <td>RememberMe</td>
+                    <td> 
+                        <input type="checkbox" id="Yes" name="Yes" value="yes" >
+                        <label for="yyyyyyyyyyzzz">Male</label>
+                        <input type = "checkbox" id="female" name="Gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+               
+            <!--<script src="./JS/bootstrap.bundle.min.js"> </script> --->
+            </table>
+        </form>
+    </body>
 </html>
